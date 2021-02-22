@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/contact_me.css') }}">
 </head>
 <body>
-    <h1>Contact me</h1>
+    <div id="main">
+        <div id="rectangle">
+            
+        </div>
+    </div>
 </body>
 </html>

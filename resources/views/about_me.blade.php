@@ -8,6 +8,10 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/about_me.css') }}">
 </head>
 <body>
-    <h1>About me</h1>
+    <div id="main">
+        <div id="rectangle">
+            
+        </div>
+    </div>
 </body>
 </html>
