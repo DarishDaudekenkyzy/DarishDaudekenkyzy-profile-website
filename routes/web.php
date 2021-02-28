@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+
+use App\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +27,16 @@ Route::get('/about-me', function () {
 Route::get('/contact-me', function () {
     return view('contact_me');
 })->name('contact_me');
+
+
+Route::get('post/create', function() {
+    DB::table('post')-> insert([
+        'title' => 'The Book Thief',
+        'body' => 'The Book Thief is a story about a girl growing up in Germany during World War II. She steals books, learns to read, and finds comfort in words.'
+        ]);
+});
+
+Route::get('post', function(){
+    $post = Post::find(1);
+    return $post;
+});
