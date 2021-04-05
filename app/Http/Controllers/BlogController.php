@@ -16,7 +16,7 @@ class BlogController extends Controller
     }
 
     public function store (Request $request) {
-        //dd($request);
+        
         Post::create([
             'id' => $request -> id,
             'title' => $request -> title,
